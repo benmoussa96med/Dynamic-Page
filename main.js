@@ -30,8 +30,9 @@ function setGb(){
         greeting.textContent='Good Afternoon';
     }
     else{
-        document.body.style.backgroundImage="url('img/night.jpg')";
+        document.body.style.backgroundImage="url('https://i.ibb.co/924T2Wv/night.jpg')"  /*"url('img/night.jpg')"*/;
         greeting.textContent='Good night';
+        document.body.style.color='white';
     }
 }
 

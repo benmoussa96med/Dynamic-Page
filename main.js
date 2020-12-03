@@ -30,8 +30,9 @@ function setGb(){
 
     }
     else if(hour<18){
-        document.body.style.backgroundImage="url('img/afternoon.jpg')";
+        document.body.style.backgroundImage="url('https://images.pexels.com/photos/2386144/pexels-photo-2386144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')";
         greeting.textContent='Good Afternoon';
+        document.body.style.color="white";
     }
     else{
         document.body.style.backgroundImage="url('https://i.ibb.co/924T2Wv/night.jpg')"  /*"url('img/night.jpg')"*/;

@@ -37,7 +37,26 @@ function setGb(){
         document.body.style.color='white';
     }
 }
-
+function setName(e){
+    if(e.type==='Keypress'){
+if(e.which===13 || e.keyCode==13){
+    localStorage.setItem('name',e.target.innerHTML);
+    name.blur(); }
+    }
+    else{
+        localStorage.setItem('name',e.target.innerHTML);
+    }
+}
+function setFocus(e){
+    if(e.type==='Keypress'){
+if(e.which===13 || e.keyCode==13){
+    localStorage.setItem('focus',e.target.innerHTML);
+    focus.blur(); }
+    }
+    else{
+        localStorage.setItem('focus',e.target.innerHTML);
+    }
+}
 function GetName(){
 if(localStorage.getItem('name')===null){
     name.textContent='[Add Name]';
@@ -54,8 +73,12 @@ function GetFocus(){
         focus.textContent=localStorage.getItem('focus');
     }
     }
+name.addEventListener('key',setName);
+name.addEventListener('blur',setName);
+focus.addEventListener('key',setFocus);
+focus.addEventListener('blur',setFocus);
 
-//Run
+///Run
 showTime();
 setGb();
 GetName();

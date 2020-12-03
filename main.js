@@ -38,6 +38,25 @@ function setGb(){
     }
 }
 
+function GetName(){
+if(localStorage.getItem('name')===null){
+    name.textContent='[Add Name]';
+}
+else{
+    name.textContent=localStorage.getItem('name');
+}
+}
+function GetFocus(){
+    if(localStorage.getItem('focus')===null){
+        focus.textContent='[Add Focus]';
+    }
+    else{
+        focus.textContent=localStorage.getItem('focus');
+    }
+    }
+
 //Run
 showTime();
 setGb();
+GetName();
+GetFocus();

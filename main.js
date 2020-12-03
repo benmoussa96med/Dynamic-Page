@@ -22,8 +22,10 @@ function setGb(){
     let Today =new Date(),
     hour=Today.getHours();
     if(hour <12){
-        document.body.style.backgroundImage="url('img/morning.jpg')";
+        document.body.style.backgroundImage="url('https://images.pexels.com/photos/1237119/pexels-photo-1237119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')";
         greeting.textContent='Good Morning';
+        document.body.style.color='white';
+
     }
     else if(hour<18){
         document.body.style.backgroundImage="url('img/afternoon.jpg')";
